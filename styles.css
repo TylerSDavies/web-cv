@@ -50,7 +50,7 @@ h2 {
 }
 
 section {
-    padding: 1rem;
+    padding: 0.5rem 0;
 }
 
 section > * {
