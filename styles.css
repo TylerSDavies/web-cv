@@ -34,6 +34,7 @@ main {
 
 h1 {
     color: #045;
+    text-align: center;
 }
 
 h2 {
@@ -129,8 +130,13 @@ button:active {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        padding: 0;
+    }
+
     main {
         padding: 2rem 0.5rem;
+        border-radius: 0;
     }
 
     h1 {
