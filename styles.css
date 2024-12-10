@@ -49,6 +49,11 @@ h2 {
   justify-content: center;
 }
 
+a {
+    color: #04f;
+    text-decoration: none;
+}
+
 section {
     padding: 0.5rem 0;
 }
@@ -112,6 +117,10 @@ button:active {
         padding: 2rem;
         border-radius: 0;
         box-shadow: 0 0 0 #0000;
+    }
+
+    a {
+        color: #000;
     }
 
     header, footer {
