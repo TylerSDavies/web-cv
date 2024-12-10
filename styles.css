@@ -2,7 +2,7 @@ html {
     font-size: 16px;
     display: flex;
     justify-content: center;
-    background-color: #222;
+    background-color: #252728;
     margin: 0;
 }
 
@@ -28,6 +28,8 @@ body {
 main {
     background-color: white;
     padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem #000;
 }
 
 h1 {
@@ -68,6 +70,30 @@ footer {
     color: white;
 }
 
+button {
+    background-color: #056;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s, scale 0.2s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #089;
+    box-shadow: 0 0 0.5rem #0008;
+    scale: 1.2;
+    transition: background-color 0.5s, box-shadow 1s, scale 1s;
+}
+
+button:active {
+    background-color: #045;
+    color: #999;
+    box-shadow: 0 0 0 #0000;
+}
+
 @media print {
     html {
         background-color: white;
@@ -84,9 +110,39 @@ footer {
 
     main {
         padding: 2rem;
+        border-radius: 0;
+        box-shadow: 0 0 0 #0000;
     }
 
     header, footer {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 2rem 0.5rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+
+    section > h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    section > * {
+        margin-left: 0;
     }
 }
