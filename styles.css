@@ -51,8 +51,12 @@ h2 {
 }
 
 a {
-    color: #04f;
+    color: #045;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -122,9 +126,20 @@ button:active {
 
     a {
         color: #000;
+        transition-duration: 0.2s;
     }
 
     header, footer {
+        display: none;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
+
+@media screen {
+    .print-only {
         display: none;
     }
 }
